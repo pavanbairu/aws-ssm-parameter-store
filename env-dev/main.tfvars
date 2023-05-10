@@ -22,4 +22,10 @@ parameters = [
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.pavanbairu.tech"},
   { name = "dev.cart.catalogue_port", value = "8080"},
 
+  # shipping routes
+  { name = "dev.shipping.cart_endpoint", value = "cart-dev.pavanbairu.tech:8080"},
+  { name = "dev.shipping.mysqldb_host", value = "mysql-dev.pavanbairu.tech"},
+  { name = "dev.shipping.mysqldb_user", value = "root"},
+  { name = "dev.shipping.mysqldb_password", value = "RoboShop@1"},
+
 ]
