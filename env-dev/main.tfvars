@@ -37,7 +37,7 @@ parameters = [
 
 ]
 
-password = [
+passwords = [
   { name = "dev.shipping.mysqldb_password", value = "RoboShop@1"},
   { name = "dev.payment.amqp_password", value = "roboshop123"}
 ]
