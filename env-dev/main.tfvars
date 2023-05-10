@@ -13,6 +13,7 @@ parameters = [
   { name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/catalogue"},
 
   # user routes
+  { name = "dev.user.mongo", value = "MONGO=true"},
   { name = "dev.user.redis_host", value = "redis-dev.pavanbairu.tech"},
   { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/users"},
 
