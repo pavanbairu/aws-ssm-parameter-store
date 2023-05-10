@@ -17,4 +17,9 @@ parameters = [
   { name = "dev.user.redis_host", value = "redis-dev.pavanbairu.tech"},
   { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/users"},
 
+  # cart routes
+  { name = "dev.cart.redis_host", value = "redis-dev.pavanbairu.tech"},
+  { name = "dev.cart.catalogue_host", value = "catalogue-dev.pavanbairu.tech"},
+  { name = "dev.cart.catalogue_port", value = "8080"},
+
 ]
