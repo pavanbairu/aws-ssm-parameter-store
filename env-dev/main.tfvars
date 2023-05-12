@@ -16,6 +16,7 @@ parameters = [
   { name = "dev.user.mongo", value = "MONGO=true"},
   { name = "dev.user.redis_host", value = "redis-dev.pavanbairu.tech"},
   { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/users"},
+  { name = "dev.user.mongo_endpoint", value = "mongodb-dev.pavanbairu.tech" },
 
   # cart routes
   { name = "dev.cart.redis_host", value = "redis-dev.pavanbairu.tech"},
