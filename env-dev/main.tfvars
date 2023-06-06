@@ -1,16 +1,18 @@
 parameters = [
 
   # frontend routes
-  { name = "dev.frontend.catalogue_url", value = "http://catalogue-dev.pavanbairu.tech:8080/"},
-  { name = "dev.frontend.user_url", value = "http://user-dev.pavanbairu.tech:8080/"},
-  { name = "dev.frontend.cart_url", value = "http://cart-dev.pavanbairu.tech:8080/"},
-  { name = "dev.frontend.shipping_url", value = "http://shipping-dev.pavanbairu.tech:8080/"},
-  { name = "dev.frontend.payment_url", value = "http://payment-dev.pavanbairu.tech:8080/"},
+  { name = "dev.frontend.catalogue_url", value = "http://catalogue-dev.pavanbairu.tech:80/"},
+  { name = "dev.frontend.user_url", value = "http://user-dev.pavanbairu.tech:80/"},
+  { name = "dev.frontend.cart_url", value = "http://cart-dev.pavanbairu.tech:80/"},
+  { name = "dev.frontend.shipping_url", value = "http://shipping-dev.pavanbairu.tech:80/"},
+  { name = "dev.frontend.payment_url", value = "http://payment-dev.pavanbairu.tech:80/"},
 
   # catalogue routes
   { name = "dev.catalogue.mongo_endpoint", value = "mongodb-dev.pavanbairu.tech"},
-  { name = "dev.catalogue.mongo", value = "MONGO=true"},
-  { name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/catalogue"},
+  { name = "dev.catalogue.mongo", value = "DOCUMENTDB=true"},
+#  { name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/catalogue"},
+#  NEW IN catalogue
+  { name = "dev.docdb.db_endpoint", value = "docdb-dev-0.c2nexml8lbg4.us-east-1.docdb.amazonaws.com" },
 
   # user routes
   { name = "dev.user.mongo", value = "MONGO=true"},
@@ -45,6 +47,8 @@ passwords = [
   { name = "dev.docdb.db_password", value = "roboshop123"},
   { name = "dev.rds.db_user", value = "roboshop"},
   { name = "dev.rds.db_password", value = "roboshop123"},
-  { name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" }
+  { name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" },
+  { name = "dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev-0.c2nexml8lbg4.us-east-1.docdb.amazonaws.com:27017/catalogue/?ssl=true&ssl_ca_certs=us-east-1-bundle.pem&retryWrites=false" },
+#  { name = "dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
 
 ]
