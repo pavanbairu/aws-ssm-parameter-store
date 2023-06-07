@@ -15,15 +15,14 @@ parameters = [
   { name = "dev.docdb.db_endpoint", value = "docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com" },
 
   # user routes
-  { name = "dev.user.mongo", value = "MONGO=true"},
-  { name = "dev.user.redis_host", value = "redis-dev.pavanbairu.tech"},
-  { name = "dev.user.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/users"},
+  { name = "dev.user.mongo", value = "DOCUMENTDB=true"},
+  { name = "dev.user.redis_host", value = "elasticache-dev-elasticache.bg5ro5.ng.0001.use1.cache.amazonaws.com:6379"},
   { name = "dev.user.mongo_endpoint", value = "mongodb-dev.pavanbairu.tech" },
 
   # cart routes
-  { name = "dev.cart.redis_host", value = "redis-dev.pavanbairu.tech"},
+  { name = "dev.cart.redis_host", value = "elasticache-dev-elasticache.bg5ro5.ng.0001.use1.cache.amazonaws.com:6379"},
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.pavanbairu.tech"},
-  { name = "dev.cart.catalogue_port", value = "8080"},
+  { name = "dev.cart.catalogue_port", value = "80"},
 
   # shipping routes
   { name = "dev.shipping.cart_endpoint", value = "cart-dev.pavanbairu.tech:8080"},
@@ -49,6 +48,6 @@ passwords = [
   { name = "dev.rds.db_password", value = "roboshop123"},
   { name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" },
   { name = "dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
-#  { name = "dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-cmscnppwjzuf.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
+  { name = "dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
 
 ]
