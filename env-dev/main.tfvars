@@ -16,11 +16,11 @@ parameters = [
 
   # user routes
   { name = "dev.user.mongo", value = "DOCUMENTDB=true"},
-  { name = "dev.user.redis_host", value = "elasticache-dev-elasticache.bg5ro5.ng.0001.use1.cache.amazonaws.com:6379"},
+  { name = "dev.user.redis_host", value = "elasticache-dev-elasticache.bg5ro5.ng.0001.use1.cache.amazonaws.com"},
   { name = "dev.user.mongo_endpoint", value = "mongodb-dev.pavanbairu.tech" },
 
   # cart routes
-  { name = "dev.cart.redis_host", value = "elasticache-dev-elasticache.bg5ro5.ng.0001.use1.cache.amazonaws.com:6379"},
+  { name = "dev.cart.redis_host", value = "elasticache-dev-elasticache.bg5ro5.ng.0001.use1.cache.amazonaws.com"},
   { name = "dev.cart.catalogue_host", value = "catalogue-dev.pavanbairu.tech"},
   { name = "dev.cart.catalogue_port", value = "80"},
 
