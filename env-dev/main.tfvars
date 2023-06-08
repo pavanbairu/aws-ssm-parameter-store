@@ -30,9 +30,9 @@ parameters = [
 
   # payment routes
   { name = "dev.payment.cart_host", value = "cart-dev.pavanbairu.tech"},
-  { name = "dev.payment.cart_port", value = "8080"},
+  { name = "dev.payment.cart_port", value = "80"},
   { name = "dev.payment.user_host", value = "user-dev.pavanbairu.tech"},
-  { name = "dev.payment.user_port", value = "8080"},
+  { name = "dev.payment.user_port", value = "80"},
   { name = "dev.payment.amqp_host", value = "rabbitmq-dev.pavanbairu.tech"},
   { name = "dev.payment.amqp_user", value = "roboshop"}
 
