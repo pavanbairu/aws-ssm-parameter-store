@@ -10,7 +10,6 @@ parameters = [
   # catalogue routes
   { name = "dev.catalogue.mongo_endpoint", value = "mongodb-dev.pavanbairu.tech"},
   { name = "dev.catalogue.mongo", value = "DOCUMENTDB=true"},
-#  { name = "dev.catalogue.mongo_url", value = "mongodb://mongodb-dev.pavanbairu.tech:27017/catalogue"},
 #  NEW IN catalogue
   { name = "dev.docdb.db_endpoint", value = "docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com" },
 
@@ -25,8 +24,8 @@ parameters = [
   { name = "dev.cart.catalogue_port", value = "80"},
 
   # shipping routes
-  { name = "dev.shipping.cart_endpoint", value = "cart-dev.pavanbairu.tech:8080"},
-  { name = "dev.shipping.mysqldb_host", value = "mysql-dev.pavanbairu.tech"},
+  { name = "dev.shipping.cart_endpoint", value = "cart-dev.pavanbairu.tech:80"},
+  { name = "dev.rds.mysqldb_host", value = "rds-dev-rds.cluster-c2nexml8lbg4.us-east-1.rds.amazonaws.com"},
   { name = "dev.shipping.mysqldb_user", value = "root"},
 
   # payment routes
@@ -48,6 +47,6 @@ passwords = [
   { name = "dev.rds.db_password", value = "roboshop123"},
   { name = "dev.rabbitmq.rabbitmq_appuser_password", value = "roboshop123" },
   { name = "dev.catalogue.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" },
-  { name = "dev.user.mongo_url", value = "mongodb://roboshop:roboshop123@docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
+  { name = "dev.user.mongo_url", value = "'mongodb://roboshop:roboshop123@docdb-dev.cluster-c2nexml8lbg4.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false" }
 
 ]
