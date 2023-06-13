@@ -1,3 +1,3 @@
 bucket = "pavanbairu"
-key = "parameter-store/dev/terraform.tfstate"
+key = "parameter-store/prod/terraform.tfstate"
 region = "us-east-1"
